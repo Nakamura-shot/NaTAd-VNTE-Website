@@ -1,3 +1,8 @@
 {
- "title":"Community Initiative (example)","category":"Community","location":"Location to be confirmed","summary":"A sample project card showing how NATAD can present current programs and initiatives.","image":"","body":"This is example content for layout testing. Replace it with the name, purpose, activities, partners, and updates of a real NATAD project before launch.","published":true
+  "title": "Community Initiative (example)",
+  "category": "Community",
+  "location": "Location to be confirmed",
+  "summary": "A sample project card showing how NaTAd-VNTE can present current programs and initiatives.",
+  "body": "This is example content for layout testing. Replace it with the name, purpose, activities, partners, and updates of a real NaTAd-VNTE project before launch.",
+  "published": true
 }
