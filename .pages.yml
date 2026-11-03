@@ -28,6 +28,27 @@ content:
         label: Hero description
         type: text
 
+      - name: header_logo
+        label: Header Logo
+        type: image
+        options:
+          extensions: [png, jpg, jpeg, webp, svg]
+          rename: true
+
+      - name: footer_logo
+        label: Footer Logo
+        type: image
+        options:
+          extensions: [png, jpg, jpeg, webp, svg]
+          rename: true
+
+      - name: favicon
+        label: Browser Tab Icon (Favicon)
+        type: image
+        options:
+          extensions: [png, svg]
+          rename: true
+
       - name: about_heading
         label: About heading
         type: string
