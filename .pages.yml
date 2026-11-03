@@ -74,6 +74,16 @@ content:
         label: Cover image
         type: image
 
+      - name: gallery
+        label: Project Photo Gallery
+        type: image
+        options:
+          multiple:
+            max: 20
+          unique: true
+          extensions: [jpg, jpeg, png, webp]
+          rename: true
+
       - name: body
         label: Project details
         type: text
