@@ -1,0 +1,12 @@
+# The site source lives in a subfolder; build from there.
+[build]
+  base = "natad-website-starter/natad-site"
+  command = "node build.mjs"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
