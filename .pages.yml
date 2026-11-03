@@ -1,49 +1,117 @@
+
 media:
-  input: media
+  input: natad-website-starter/natad-site/media
   output: /media
 
 content:
   - name: site
     label: Homepage & Organization
     type: file
-    path: content/site.json
+    path: natad-website-starter/natad-site/content/site.json
     format: json
+    operations:
+      delete: false
     fields:
-      - { name: kicker, label: Hero eyebrow, type: string }
-      - { name: hero_title, label: Hero title, type: string }
-      - { name: hero_emphasis, label: Hero highlighted line, type: string }
-      - { name: hero_description, label: Hero description, type: text }
-      - { name: about_heading, label: About heading, type: string }
-      - { name: about_text, label: About description, type: text }
-      - { name: contact_email, label: Contact email, type: string }
-      - { name: footer_text, label: Footer description, type: text }
+      - name: kicker
+        label: Hero eyebrow
+        type: string
+
+      - name: hero_title
+        label: Hero title
+        type: string
+
+      - name: hero_emphasis
+        label: Hero highlighted line
+        type: string
+
+      - name: hero_description
+        label: Hero description
+        type: text
+
+      - name: about_heading
+        label: About heading
+        type: string
+
+      - name: about_text
+        label: About description
+        type: text
+
+      - name: contact_email
+        label: Contact email
+        type: string
+
+      - name: footer_text
+        label: Footer description
+        type: text
 
   - name: projects
     label: Projects
     type: collection
-    path: content/projects
+    path: natad-website-starter/natad-site/content/projects
     format: json
     filename: "{primary}.json"
-    view: { primary: title }
+    view:
+      primary: title
     fields:
-      - { name: title, label: Project title, type: string, required: true }
-      - { name: category, label: Category, type: string }
-      - { name: location, label: Location, type: string }
-      - { name: summary, label: Short summary, type: text }
-      - { name: image, label: Cover image, type: image }
-      - { name: body, label: Project details, type: text }
-      - { name: published, label: Published, type: boolean, default: true }
+      - name: title
+        label: Project title
+        type: string
+        required: true
+
+      - name: category
+        label: Category
+        type: string
+
+      - name: location
+        label: Location
+        type: string
+
+      - name: summary
+        label: Short summary
+        type: text
+
+      - name: image
+        label: Cover image
+        type: image
+
+      - name: body
+        label: Project details
+        type: text
+
+      - name: published
+        label: Published
+        type: boolean
+        default: true
 
   - name: updates
     label: News & Updates
     type: collection
-    path: content/updates
+    path: natad-website-starter/natad-site/content/updates
     format: json
     filename: "{primary}.json"
-    view: { primary: title, sort: date, order: desc }
+    view:
+      primary: title
+      sort: date
+      order: desc
     fields:
-      - { name: title, label: Title, type: string, required: true }
-      - { name: date, label: Date (YYYY-MM-DD), type: string }
-      - { name: summary, label: Summary, type: text }
-      - { name: body, label: Article, type: text }
-      - { name: published, label: Published, type: boolean, default: true }
+      - name: title
+        label: Title
+        type: string
+        required: true
+
+      - name: date
+        label: Date (YYYY-MM-DD)
+        type: string
+
+      - name: summary
+        label: Summary
+        type: text
+
+      - name: body
+        label: Article
+        type: text
+
+      - name: published
+        label: Published
+        type: boolean
+        default: true
