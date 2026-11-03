@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://natad-vnte.org/sitemap.xml
