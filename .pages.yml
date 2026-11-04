@@ -28,6 +28,13 @@ content:
         label: Hero description
         type: text
 
+      - name: hero_image
+        label: Homepage Hero Image
+        type: image
+        options:
+          extensions: [jpg, jpeg, png, webp]
+          rename: true
+
       - name: header_logo
         label: Header Logo
         type: image
